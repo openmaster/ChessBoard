@@ -14,11 +14,15 @@
 </head>
 
 <body ng-controller="mainController">
-	{{heading}}
-	<chess-board></chess-board>
+	{{heading}} {{chess_board}}
+	<button ng-click="dimentions()">get dem</button>
+	<chess-board dimentions="chess_board"></chess-board>
 </body>
 
 </html>
 
 <!--Adding directives-->
 <script type="text/javascript" src="directives/chess-board.js"></script>
+
+<script type="text/javascript" src="services/api.js"></script>
+
