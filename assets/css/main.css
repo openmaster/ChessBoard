@@ -1,0 +1,19 @@
+.black {
+	display:inline-block;
+	background-color: black;
+	height: 50px;
+	width: 50px;
+	color: white;
+}
+.white {
+	display:inline-block;
+	background-color: white;
+	height: 50px;
+	width: 50px;
+	color: black;
+}
+.base {
+    position: absolute;
+    border: 15px outset #37462391;
+
+}

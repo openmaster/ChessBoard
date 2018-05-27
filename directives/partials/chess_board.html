@@ -1,3 +1,9 @@
-<div>this is directive html file in partials {{chess_board}}
-<button ng-click="show()">dir values</button>
+<div>this is directive html file in partials 
+	<button ng-click="show()">dir values</button>
+	<div class="base">
+		<div ng-repeat="rows in chess" >
+			<span ng-repeat="cols in rows" class="{{cols.class}}" >{{cols.i}} x {{cols.j}}</span>
+		</div>
+	</div>
+
 </div>
