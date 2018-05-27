@@ -12,8 +12,16 @@
 	width: 50px;
 	color: black;
 }
+.clicked {
+	display:inline-block;
+	background-color: #0000ff;
+	height: 50px;
+	width: 50px;
+	color: #ffff00;
+}
 .base {
     position: absolute;
     border: 15px outset #37462391;
+    
 
 }

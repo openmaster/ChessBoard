@@ -9,8 +9,19 @@ chessApp.directive('chessBoard', function() {
 		},
 		link: function(scope, element, attrs) {
 			scope.chess = [];
-			scope.show = function(){
-				console.log(scope.chess_board);
+			
+			reset_orginal_colors = function(){
+				for(i = 0; i < scope.chess.length; i++) {
+					for(j = 0; j < scope.chess[i].length; j++){
+						if(scope.chess[i][j].clicked == true){
+							scope.chess[i][j].clicked = false;
+						}					
+					}
+				}
+			}
+			scope.cell_click = function(col){
+				reset_orginal_colors()
+				col.clicked = true;
 			}
 
 			push_black = function(i, j){
