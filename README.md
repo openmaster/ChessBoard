@@ -8,6 +8,10 @@ steps to run this project:
 
 There is a reload button that will reload new dimensions every time its clicked.
 
-Thank You 
-Vishavjeet Singh
-  
+# Demo running on Heroku dyno.
+https://chessboard-.herokuapp.com/ 
+but you have to unblock the insecure content setting of the browser. (this is because of the http request of dimensions).
+
+Thank You.
+
+Vishavjeet Singh. 
