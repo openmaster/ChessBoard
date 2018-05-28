@@ -1,5 +1,4 @@
 chessApp.directive('chessBoard', function() {
-	console.log('hittng directive log');
 	return {
 		restrict: 'E',
 		templateUrl: 'directives/partials/chess_board.html',
@@ -70,7 +69,6 @@ chessApp.directive('chessBoard', function() {
 				//dim object should have rows and cols
 				scope.chess = [];
 				if(dim.rows != null && dim.cols != null) {
-					console.log('no problem');
 					for(i = 1; i <= dim.rows; i++) {
 						//adding number of rows
 						if(i%2 == 0){
@@ -81,13 +79,11 @@ chessApp.directive('chessBoard', function() {
 							starting_black(dim, i);
 						}
 					}
-					console.log(scope.chess);
 				}
 			}
 
 			scope.$watch('chess_board', function(values){
 				if(values){
-					console.log(values);
 					create_chess(values);
 				}
 			}, true);

@@ -1,11 +1,8 @@
-<div>this is directive html file in partials 
-	<div class="base">
-		<div ng-repeat="rows in chess" >
-			<span ng-click="cell_click(cols)" 
-				  ng-repeat="cols in rows" 
-				  class="{{cols.class}}" 
-				  ng-class="{'clicked': cols.clicked}">{{cols.i}} x {{cols.j}}</span>
-		</div>
-	</div>
-
+<div class="base">
+  <div ng-repeat="rows in chess" >
+    <span ng-click="cell_click(cols)" 
+	  ng-repeat="cols in rows" 
+	  class="{{cols.class}}" 
+	  ng-class="{'clicked': cols.clicked}">{{cols.i}} x {{cols.j}}</span>
+  </div>
 </div>
