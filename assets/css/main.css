@@ -1,22 +1,20 @@
 .black {
 	display:inline-block;
 	background-color: black;
-	height: 50px;
-	width: 50px;
+	height: 70px;
+	width: 70px;
 	color: white;
 }
 .white {
 	display:inline-block;
 	background-color: white;
-	height: 50px;
-	width: 50px;
+	height: 70px;
+	width: 70px;
 	color: black;
 }
 .clicked {
 	display:inline-block;
 	background-color: #0000ff;
-	height: 50px;
-	width: 50px;
 	color: #ffff00;
 }
 .base {
